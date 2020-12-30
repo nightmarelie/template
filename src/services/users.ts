@@ -1,6 +1,6 @@
-import EntityUser, { Status, Role } from 'domain/User';
+import DomainUser, { Status, Role } from 'domain/User';
 
-class User implements EntityUser {
+class User implements DomainUser {
   constructor(
     public id: number,
     public firstName: string,
@@ -19,7 +19,7 @@ class User implements EntityUser {
 }
 
 class Users {
-  public static serialize(entity: EntityUser): User {
+  public static serialize(entity: DomainUser): User {
     return entity as User;
   }
 }

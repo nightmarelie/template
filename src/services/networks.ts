@@ -1,15 +1,19 @@
-import EntityNetwork from 'domain/Network';
+import DomainNetwork from 'domain/Network';
 
-class Network implements EntityNetwork {
-  constructor(public id: number, public title: string) {}
+class Network implements DomainNetwork {
+  constructor(
+    public id: number,
+    public title: string,
+    public description: string,
+  ) {}
 
   public meta() {
-    return `${this.id}: ${this.title}`;
+    return `${this.id}: ${this.title} ${this.description}`;
   }
 }
 
 class Networks {
-  public static serialize(entity: EntityNetwork): Network {
+  public static serialize(entity: DomainNetwork): Network {
     return entity as Network;
   }
 }

@@ -7,7 +7,7 @@ import networks from './networks';
 const appReducer = combineReducers({
   auth,
   networks,
-  // TODO: add ather reducers
+  // TODO: add other reducers
 });
 
 export type RootState = ReturnType<typeof appReducer>;

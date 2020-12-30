@@ -1,4 +1,5 @@
-export default interface EntityNetwork {
+export default interface Network {
   id: number;
   title: string;
+  description: string;
 }

@@ -12,7 +12,7 @@ enum Role {
 
 export { Role, Status };
 
-export default interface EntityUser {
+export default interface User {
   id: number;
   firstName: string;
   lastName: string;
